@@ -5,8 +5,8 @@ const cors = require('cors');
 const app = express();
 const logger = require('./middleware/logger');
 const validator = require('./middleware/validator');
-const handle404Error = require('./middleware/404');
-const handle500Error = require('./middleware/500');
+const handle404Error = require('./error-handlers/404');
+const handle500Error = require('./error-handlers/500');
 
 // middleware
 app.use(cors());
